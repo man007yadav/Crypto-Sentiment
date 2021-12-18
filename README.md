@@ -17,6 +17,8 @@ We generate two plots - Number of messages per day and Avg Sentiment Polarity pe
 
 ## Documentation
 
+For details of implementation refer to the comments in the script code.
+
 1. **Libraries used**
    * spaCy - Used for Language Detection for English and Sentiment Polarity scores of messages.
    * plotly - Used to plot the Number of messages per day and Avg Sentiment Polarity per day plots.
