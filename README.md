@@ -38,5 +38,6 @@ For details of implementation refer to the comments in the script code.
 ```
  python crypto_sentiment.py
 ```
+Plots are generated with name **sentiment.jpeg** and **num_msgs.jpeg**
 
 
