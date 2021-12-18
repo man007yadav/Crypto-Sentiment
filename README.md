@@ -19,7 +19,11 @@ We plot two plots of Number of messages per day for the dates May 1, 2021 to May
 
 1. **Libraries used**
    * spaCy - Used for Language Detection for English and Sentiment Polarity scores of messages.
-   * plotly - Used to plot the Number of messages per day and Avg Sentiment Polarity per day plots
+   * plotly - Used to plot the Number of messages per day and Avg Sentiment Polarity per day plots.
+
+2. **Files**
+   * result.json - Data Export of text messages 
+   * crypto_sentiment.py - Script to generate the plots
 
 ## Instructions to run
 
