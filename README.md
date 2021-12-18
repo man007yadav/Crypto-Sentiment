@@ -2,7 +2,7 @@
  
 ## Results
 
-We generate two plots - Number of messages per day and Avg Sentiment Polarity per day for the dates May 1, 2021 to May 15, 2021. We see the following results from the plots.
+We generate two plots - Number of messages per day and Avg Sentiment Polarity per day for the dates between May 1, 2021 to May 15, 2021. We see the following results from the plots.
 
 ### Num of Messages per day plot
 ![alt text](https://github.com/man007yadav/Crypto-Sentiment/blob/main/num_msgs.jpeg)
