@@ -12,7 +12,7 @@ We generate two plots - Number of messages per day and Avg Sentiment Polarity pe
 ### Sentiment Polarity per day plot
 ![alt text](https://github.com/man007yadav/Crypto-Sentiment/blob/main/sentiment.jpeg)
 
-* **Avg Sentiment Polarity per day plot** - Similar to the Number of messages per day plot, we can see that after May 7 2021, we see that the sentiment polarity goes down after the mentioned event causing the prices of crypto like dogecoin to tumble. This confirms that our plot is correct and able to identify events like these usng just sentiment polrity scores.
+* **Avg Sentiment Polarity per day plot** - Similar to the Number of messages per day plot, we can see that after May 7 2021, the sentiment polarity goes down after the mentioned event caused the prices of crypto like dogecoin to tumble. This confirms that our plot is correct and able to identify events like these using just sentiment polrity scores.
 
 
 ## Documentation
