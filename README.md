@@ -24,13 +24,13 @@ We plot two plots of Number of messages per day for the dates May 1, 2021 to May
 ## Instructions to run
 
 1. Install Python dependencies
-'''
+```
   pip install -r requirements.txt
-'''
+```
 
 2. Run the script to generate the plots
-'''
+```
  python crypto_sentiment.py
-'''
+```
 
 
