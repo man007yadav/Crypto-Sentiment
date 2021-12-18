@@ -18,9 +18,11 @@ import plotly.express as px
 def get_lang_detector(nlp, name):
     return LanguageDetector()
 
+#Load spacy sentiment analysis model
 nlp_sentiment = spacy.load('en_core_web_sm')
 nlp_sentiment.add_pipe('spacytextblob')
 
+#Load spacy language detection model
 nlp = spacy.load("en_core_web_sm")
 Language.factory("language_detector", func=get_lang_detector)
 nlp.add_pipe('language_detector', last=True)
@@ -30,12 +32,18 @@ def contains_word(sentence, word):
     return f' {word} ' in f' {sentence} '
 
 def filter(text):
+    '''
+    Return true text contains SHIB or DOGE
+    '''
     if len(text) > 0 \
         and (contains_word(text.upper(), 'SHIB') or contains_word(text.upper(), 'DOGE')):
         return True
     return False
 
 def get_filtered_msgs(data):
+    '''
+    Filter messages and return list of filtered messages
+    '''
 
     filtered_msg = []
     for msg in tqdm(data['messages']):
@@ -56,10 +64,16 @@ def get_filtered_msgs(data):
     return filtered_msg
 
 def detect_english_text(text):
+    '''
+    Check if the text is written in English language
+    '''
     doc = nlp(text)
     return doc._.language['language'] == 'en'
 
 def preprocess_text(text):
+    '''
+    Preprocess text to remove punctuations and other emoticons, and lowercase
+    '''
     try:
         punctuationfree = "".join([i for i in text if i not in string.punctuation])
         punctuationfree = text
@@ -70,6 +84,9 @@ def preprocess_text(text):
         print(text)
 
 def get_text_polarity(text):
+    '''
+    Return Sentiment Polarity of text
+    '''
     doc = nlp_sentiment(text)
     return doc._.polarity
 
